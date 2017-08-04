@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Item 2 is selected", Toast.LENGTH_SHORT).show();
         }else if (id == R.id.item3_id){
             Toast.makeText(this, "Item 3 is selected", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.search_id){
+            Toast.makeText(this, "Search is selected", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.cart_id){
+            Toast.makeText(this, "Cart is selected", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
