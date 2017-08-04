@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 
@@ -34,14 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.item1_id){
             Toast.makeText(this, "Item 1 is selected", Toast.LENGTH_SHORT).show();
-        }else if (id == R.id.item2_id){
+        } else if (id == R.id.item2_id){
             Toast.makeText(this, "Item 2 is selected", Toast.LENGTH_SHORT).show();
-        }else if (id == R.id.item3_id){
+        } else if (id == R.id.item3_id){
             Toast.makeText(this, "Item 3 is selected", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.search_id){
             Toast.makeText(this, "Search is selected", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.cart_id){
             Toast.makeText(this, "Cart is selected", Toast.LENGTH_SHORT).show();
+        } else if (id == android.R.id.home){
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
